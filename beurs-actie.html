@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trouwbeurs Actie - Persoonlijk Lied & Video</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; line-height: 1.6; }
+    h1 { color: #d63384; }
+    form { max-width: 600px; margin-top: 2rem; }
+    label { display: block; margin-top: 1rem; }
+    input, textarea, select { width: 100%; padding: 0.5rem; margin-top: 0.3rem; }
+    button { margin-top: 1.5rem; padding: 0.75rem 1.5rem; background: #d63384; color: #fff; border: none; cursor: pointer; }
+    button:hover { background: #b52a6b; }
+  </style>
+</head>
+<body>
+  <h1>Trouwbeurs Actie</h1>
+  <p>Laat jullie eigen <strong>persoonlijke bruiloftslied</strong> maken! Tijdens de trouwbeurs ontvangen jullie een exclusieve aanbieding:
+    wij schrijven en produceren een lied speciaal voor jullie bruiloft. Na de grote dag maken we – met jullie bewerkte foto's –
+    een prachtige video met jullie lied als soundtrack.</p>
+  <p>Vul het formulier in om de actie vast te leggen. Na ontvangst nemen we contact op om alle details door te spreken.</p>
+
+  <form action="#" method="post">
+    <label for="names">Jullie namen</label>
+    <input type="text" id="names" name="names" required />
+
+    <label for="email">E-mailadres</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="wedding-date">Trouwdatum</label>
+    <input type="date" id="wedding-date" name="wedding_date" required />
+
+    <label for="package">Pakket</label>
+    <select id="package" name="package">
+      <option value="song">Alleen lied</option>
+      <option value="song_video">Lied + video (foto's na de bruiloft)</option>
+    </select>
+
+    <label for="message">Bijzonderheden / wensen</label>
+    <textarea id="message" name="message" rows="5"></textarea>
+
+    <button type="submit">Verstuur aanvraag</button>
+  </form>
+</body>
+</html>
